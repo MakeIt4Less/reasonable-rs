@@ -1,0 +1,5 @@
+# What is this?
+This is a repo of experiments and quick exmaple projects that are meant to show off how to do simple things in rust without pulling in a million dependencies. When looking up how to do anything other than a command line hello world for rust its almost always the case that you get a million package suggestions and over the top build system based how tos. I want to provide a resource that shows that there is no magic secret that only the package makers understand. Most of the things you might want to do are within reach of regular vanilla rust.
+
+# What this is not
+This is not an attempt by me to say that the packages and build systems that have been put together by people smarter than me are useless. They are excellent tools that make actually scaling a large project possible. But for small hobby projects and learning how to use rust to its full extent they are usually not worth the effort to get set up and fight with in my opinion. 
