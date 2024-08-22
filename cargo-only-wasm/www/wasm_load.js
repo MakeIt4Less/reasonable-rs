@@ -45,7 +45,7 @@ function cstr_by_ptr(mem_buffer, ptr) {
     return new TextDecoder().decode(bytes);
 }
 
-await WebAssembly.instantiateStreaming(fetch('../target/wasm32-unknown-unknown/debug/no_bindgen_wasm.wasm'), {
+await WebAssembly.instantiateStreaming(fetch('../target/wasm32-unknown-unknown/debug/cargo_only_wasm.wasm'), {
     env: make_environment({
         log_console: (str_ptr) => {
             let buf = wasm.instance.exports.memory.buffer;

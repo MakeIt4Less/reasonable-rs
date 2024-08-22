@@ -1,5 +1,5 @@
 [package]
-name = "no-bindgen-wasm"
+name = "cargo-only-wasm"
 version = "0.1.0"
 edition = "2021"
 
