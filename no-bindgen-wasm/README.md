@@ -1,0 +1,1 @@
+WASM is a first class target for rust which means that all you need to build is cargo. No external libraries, no other build tool, no npm, no node. This is a quick example of building wasm modules that provide simple and straightforward access to and from the browser and rust.

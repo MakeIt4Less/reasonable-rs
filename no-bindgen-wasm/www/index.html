@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reasonable RS no bindgen WASM</title>
+</head>
+<body>
+    <Center><H1>Nothing is Rendered Here Yet</H1></Center>
+</body>
+<script>
+    const { protocol } = window.location;
+    const isHosted = protocol !== "file:";
+
+    if (isHosted) {
+        const script = Object.assign(document.createElement("script"), {
+            type: "module",
+            src: "./wasm_load.js",
+            defer: true
+        });
+
+        document.head.appendChild(script);
+    } else {
+        window.addEventListener("load", () => {
+            document.body.innerHTML = `
+                <div class="not-hosted-msg">
+                    <div class="important">
+                      <p>Unfortunately, due to CORs restrictions, the wasm assembly cannot be fetched.</p>
+                      <p>Please navigate to this location using a web server.</p>
+                      <p>If you have Python 3 on your system you can just do:</p>
+                    </div>
+                    <code>$ python3 -m http.server 6969</code>
+                </div>
+            `;
+        });
+    }
+</script>
+</html>
