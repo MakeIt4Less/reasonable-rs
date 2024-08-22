@@ -25,9 +25,9 @@ If you have python installed navigate to the www folder and run
 If using vscode I like to use the [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) plugin.
 
 # Platforms
-✅ Windows
-✅ Linux
-❔ Mac (Do not have one to test with)
+- ✅ Windows
+- ✅ Linux
+- ❔ Mac (Do not have one to test with)
 
 # Contributing
 Please feel free to contribute anything you find useful!!
